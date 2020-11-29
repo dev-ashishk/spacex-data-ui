@@ -1,0 +1,20 @@
+.filters {
+    position: sticky;
+    top: 0;
+    .filter {
+        margin-bottom: 2em;
+        padding: 1em 2em;
+        margin-bottom: 2em;
+        @extend .card;
+        .filter-label {
+            font-size: 0.9em;
+            margin: 1em 0;
+        }
+        .filter-option-list {
+            display: inline-grid;
+            grid-gap: 20px;
+            grid-template-columns: auto auto;
+            width: 100%;
+        }
+    }
+}

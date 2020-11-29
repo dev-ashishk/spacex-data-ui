@@ -1,5 +1,5 @@
 {
-    "name": "react-redux-isomorphic-boilerplate",
+    "name": "spacex-data-ui",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
@@ -11,7 +11,7 @@
         "build": "npm-run-all --print-label --parallel prod:build-server prod:build-client",
         "prod:build-server": "webpack --config webpack/production/webpack.server.js",
         "prod:build-client": "webpack --config webpack/production/webpack.client.js",
-        "start": "NODE_ENV=production node server-build/server.js",
+        "serve": "NODE_ENV=production node server-build/server.js",
         "lint": "./node_modules/eslint-watch/bin/esw --",
         "lint:watch": "npm run lint --watch",
         "docker": "./tools/docker.sh",

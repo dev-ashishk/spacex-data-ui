@@ -5,9 +5,9 @@ import Routes from "./Routes";
 import styles from "./scss/root.scss";
 
 const App = () => (
-    <div className={"container"}>
+    <React.Fragment>
         {renderRoutes(Routes)}
-    </div>
+    </React.Fragment>
 );
 
 export default withStyles(styles)(App);

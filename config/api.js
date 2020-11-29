@@ -2,7 +2,7 @@ import axios from "axios";
 
 const axiosInstance = (config = {}, baseUrl = "") => {
     const instance = axios.create({
-        baseURL: `${baseUrl}/api/v1`,
+        baseURL: `${baseUrl}/api`,
         ...config
     });
     instance.interceptors.request.use((response) => response, (error) => {

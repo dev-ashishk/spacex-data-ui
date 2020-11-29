@@ -1,0 +1,29 @@
+// Mixin itself
+@mixin clearfix() {
+    &::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
+
+.clearfix{
+    &::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
+$borderRadius: 3px;
+@mixin borderRadius {
+    border-radius: $borderRadius !important;
+}
+$transition: 0.3s ease all;
+@mixin transition{
+    transition: $transition;
+}
+.ellipsis{
+    white-space: pre;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

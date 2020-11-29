@@ -19,7 +19,7 @@ const HTML = ({
         <link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192-192.png">
         <link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512-512.png">
         <link rel="manifest" href="/manifest.json">
-        <title>Hacker Rank News Portal</title>
+        <title>SpaceX Launch Programs</title>
         <script>
             if('serviceWorker' in navigator) {
                 navigator

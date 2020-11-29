@@ -1,6 +1,6 @@
 [![CircleCI](https://circleci.com/gh/dev-ashishk/ssr-stream-setup.svg?style=shield)](https://circleci.com/gh/circleci/circleci-docs)
 
-# react-redux-isomorphic-boilerplate
+# spacex-data-ui
 
 ### Features
 
@@ -26,7 +26,7 @@ Steps to follow
 1. Clone ssr-stream-setup
 2. Change the current directory to `ssr-stream-setup`
 ```
-cd react-redux-isomorphic-boilerplate
+cd spacex-data-ui
 ```
 3. Run the install `npm install`
 
