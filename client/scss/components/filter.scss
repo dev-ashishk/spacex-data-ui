@@ -16,5 +16,9 @@
             grid-template-columns: auto auto;
             width: 100%;
         }
+        &:hover {
+            box-shadow: unset !important;
+            transition: unset !important;
+        }
     }
 }

@@ -23,22 +23,20 @@ const filters = [{
     values: ["true", "false"]
 }];
 
-const INITIAL_STATE = {
-    launch_year: 2006,
-    launch_success: null,
-    land_success: null
-};
 class Home extends Component {
     state = {
-        ...INITIAL_STATE
+        launch_year: null,
+        launch_success: null,
+        land_success: null
     }
 
     resetFilters = (e) => {
         e.preventDefault();
+        this.props.fetchList();
         this.setState({
-            ...INITIAL_STATE
-        }, () => {
-            this.props.fetchList(this.state);
+            launch_year: null,
+            launch_success: null,
+            land_success: null
         });
     }
 
@@ -60,7 +58,7 @@ class Home extends Component {
 
     render() {
         const { data, loading } = this.props;
-
+        console.log(this.state);
         const NoDataBanner = () => (
             <h2 style={{
                 margin: "auto",
@@ -97,7 +95,7 @@ class Home extends Component {
                             <div className="row">
                                 {
                                     data.length > 0
-                                        ? data.map((item, i) => <div key={i} className="col-4 col-xs-12 col-md-4 col-ls-4 no-padding"><Card {...item}/></div>)
+                                        ? data.map((item, i) => <div key={i} className="col-3 col-xs-12 col-md-3 col-ls-3 no-padding"><Card {...item}/></div>)
                                         : <NoDataBanner/>
                                 }
                             </div>

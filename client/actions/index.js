@@ -7,11 +7,11 @@ import {
 const fetchList = (params = {}) => async (dispatch, getState, { api }) => {
     try {
         dispatch({ type: FETCH_LIST_PENDING });
-        const res = await api.get("/launches?limit=100&amp;launch_success=true&amp;lan", {
+        const res = await api.get("/launches", {
             params: {
                 limit: 100,
-                launch_success: true,
-                land_success: true,
+                // launch_success: true,
+                // land_success: true,
                 ...params
             }
         });

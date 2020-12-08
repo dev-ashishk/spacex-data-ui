@@ -18,7 +18,7 @@ const Filter = ({
             </h3>
             <div className="filter-option-list">
                 {
-                    values.map((value, i) => <Button className={`sm btn-${ selected[keyName] === value ? "success" : "neutral"}`} onClick={() => onSelect(keyName, value)} text={value} key={i}/>)
+                    values.map((value, i) => <Button className={`sm btn-${selected[keyName] === value ? "success" : "neutral"}`} onClick={() => onSelect(keyName, value)} text={value} key={i}/>)
                 }
             </div>
         </div>
